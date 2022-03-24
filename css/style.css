@@ -3,35 +3,26 @@ html {
     font-size: 62.5%;
 }
 
-* {
-    text-align: justify;
-    font-family: 'Share Tech Mono', monospace;
-    color: #0c0c0c;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 2rem;
-    margin: 0;
-    padding: 0;
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
     box-sizing: border-box;
+    max-width: 100;
+    overflow-x: hidden;
 }
 
-.botonera {
+#botonera {
     background-color: rgba(255, 177, 205, .9);
     position: sticky;
     top: 0;
-}
-
-.botonera ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-
-.botonera ul li a {
     font-size: 2rem;
-    text-decoration: none;
-    color: #0c0c0c;
+}
+
+#botonera img {
+    width: 200px;
+}
+
+#botonera ul li a {
     background: linear-gradient(to top, rgb(235, 33, 108), rgb(235, 33, 108));
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -39,119 +30,125 @@ html {
     transition: background-size .3s;
 }
 
-.botonera ul li a:hover {
+#botonera ul li a:hover {
     font-weight: 600;
     color: black;
     background-size: 100% 4px;
 }
 
-body {
-    background-image: url(../img/fondo-final.jpg);
-    background-size: cover;
-}
 
+}
 h1,
 h2,
 h3 {
     font-family: 'Open Sans', sans-serif;
     color: #5c283b;
 }
-
-.textTitulo {
-    font-size: 4rem;
+#titulo {
+    font-size: 5em;
     font-weight: 700;
-    text-decoration: underline;
     color: rgb(235, 33, 108);
 }
-
-.textTitulo:hover {
-    transform: rotate(10deg);
-    transition: transform 3s;
-}
-
-.encabezadoImg--fluid {
-    width: 75%;
-    border: double rgb(235, 33, 108) 12px;
-}
-
-.encabezadoImg--fluid:hover {
-    transform: skew(10deg);
-    transition: transform 3s;
-}
-
-.textSubtitulo {
+#subtitulo {
     font-size: 4rem;
     line-height: 1;
     font-weight: 600;
     color: rgb(235, 33, 108);
-    text-decoration: underline;
-    margin-bottom: 2em;
 }
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+#main p {
+    text-align: justify;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 10px auto;
 }
-
-.tituloFooter {
-    font-size: 2rem;
+.btn-episodios {
+    background-color: #5c283b;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.btn-episodios:hover {
+    background: linear-gradient(to top, #5c283b, #c54f7a);
+    color: white;
+}
+#tituloForm {
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(216, 65, 120);
+}
+#tituloSecundario {
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(216, 65, 120);
+}
+#tituloFooter {
+    font-size: 3rem;
     font-weight: 1000;
     margin-right: 20px;
 }
 
-.imagenFooter {
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
+/**Inicia contenido Nosotras**/
+
+/*.imagenPodcast {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    justify-content: center;
+    gap: 2em;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2em;
 }
 
-.footer a {
-    text-decoration: none;
+p {
+    width: 90%;
+    text-align: justify;
+    padding: 10px 30px;
+    
 }
 
-
-/*Contenido del index*/
-
-#episodioUno {
-    grid-area: episodioUno;
+.mapaSeccion {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
 }
 
-#episodioDos {
-    grid-area: episodioDos;
+#nosotras {
+    grid-area: nosotras;
 }
 
-.general {
+#imagenUno {
+    grid-area: imagenUno;
+}
+
+#imagenDos {
+    grid-area: imagenDos;
+}
+
+#historia {
+    grid-area: historia;
+}
+
+#proposito {
+    grid-area: proposito;
+}
+
+#mapa {
+    grid-area: mapa;
+}
+
+.nosotrasGeneral {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat (6, auto);
-    grid-template-areas: "nav" "header" "episodioUno" "episodioDos" "opinion" "footer";
-}
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "nav" "header" "nosotras" "imagenUno" "imagenDos" "historia" "proposito" "mapa" "footer";
+}*/
 
-.episodios {
-    margin: 10px;
-    width: 99%;
-}
-
-.episodios div {
-    border: solid 2px;
-    padding: 20px;
-    margin: 10px;
-}
-
-.imagenEpisodio {
-    display: flex;
-    align-items: center;
-    margin: auto;
-}
-
-.tituloEnlace {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.opinion {
+/*.opinion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,12 +175,11 @@ h3 {
 .opinion div input {
     margin-left: 15px;
     margin-right: 15px;
-}
-
+}*/
 
 /**Contenido contactos**/
 
-#datos {
+/*#datos {
     grid-area: datos;
 }
 
@@ -293,7 +289,7 @@ h3 {
 
 /**Inicia contenido Episodios**/
 
-.tablaEpisodios {
+/*.tablaEpisodios {
     width: 90%;
     margin: 30px auto;
     padding: 30px 20px;
@@ -308,79 +304,11 @@ h3 {
 
 .tablaEpisodios td {
     text-align: center;
-}
-
-
-/**Inicia contenido Nosotras**/
-
-strong,
-b {
-    font-weight: bold;
-}
-
-.imagenPodcast {
-    display: flex;
-    flex-direction: column;
-    vertical-align: center;
-    justify-content: center;
-    gap: 2em;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 2em;
-}
-
-p {
-    width: 90%;
-    text-align: justify;
-    padding: 10px 30px;
-    margin: 10px auto;
-}
-
-.mapaSeccion {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: auto;
-    margin: 10px auto;
-    padding: 20px 30px;
-    box-sizing: border-box;
-}
-
-#nosotras {
-    grid-area: nosotras;
-}
-
-#imagenUno {
-    grid-area: imagenUno;
-}
-
-#imagenDos {
-    grid-area: imagenDos;
-}
-
-#historia {
-    grid-area: historia;
-}
-
-#proposito {
-    grid-area: proposito;
-}
-
-#mapa {
-    grid-area: mapa;
-}
-
-.nosotrasGeneral {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, auto);
-    grid-template-areas: "nav" "header" "nosotras" "imagenUno" "imagenDos" "historia" "proposito" "mapa" "footer";
-}
-
+}*/
 
 /**Inicia contenido Debate**/
 
-#debates {
+/*#debates {
     grid-area: debates;
 }
 
@@ -473,12 +401,11 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, auto);
     grid-template-areas: "nav" "header" "debates" "temas" "extra" "comentarios" "footer";
-}
-
+}*/
 
 /**Inicia media queries**/
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .general {
         grid-template-columns: 2fr;
         grid-template-rows: repeat (4, auto);
@@ -518,4 +445,4 @@ p {
     .cajasDebate {
         flex-direction: row;
     }
-}
+}*/
